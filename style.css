@@ -1,1 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap'); 
+
+body{ /* body selecciona el cuerpo general y lo pinta */
+			background: antiquewhite); 
+			}
+
+			header{font-size: 64px;
+				width: 900px;
+				margin: 0 auto; /* centrar elementos dentro de este div */
+			 }
+
+			footer {width: 900px;
+				margin: 0 auto;}
+
+		#contenedor{/* selecciona el div y lo pinta */
+			width: 900px; 
+			padding: 20px 0px;
+			margin: 0px;
+			background: gray;
+			margin: 0 auto; /* centrar elementos dentro de este div */
+			float: center;  /* otras opciones son left, right */
+		}
+		div{/* selecciona el div y lo pinta */
+			width: 820px; 
+			padding: 20px;
+			margin: 20px 20px;
+			background: white;
+		}
+		#desarrollo{/* selecciona el id y lo pinta */
+			background: orange;
+			}
+		h1{/* selecciona el header o titulo 1 y lo pinta */
+			background: yellow;
+			width: 100%;
+			padding: 0px;
+			margin: 20px 0px;
+			border: 0px solid blue;
+			font-size: 28px;
+			color: green;
+    		font-family: 'Aboreto', cursive;
+    		}
+		h2 {/* selecciona el header o titulo 3 y lo pinta */
+			background: pink;
+			width: 80%;
+			font-size: 20px;
+			color: navy;
+			font-family: 'Orelega One', cursive;
+			}
+		p {/* selecciona el parrafo y lo pinta */
+			background: white;
+			width: 100%;
+			padding: 10px;
+			font-size: 18px;
+			}
+		img{/* selecciona las imagenes y las formatea */
+			border: 0px solid gray;
+			width: 100%;
+			}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
