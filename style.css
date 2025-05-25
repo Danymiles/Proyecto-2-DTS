@@ -1,44 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap'); 
 
-body{ /* body selecciona el cuerpo general y lo pinta */
-			background: antiquewhite); 
+body{ 
+			background: #565D57; 
 			}
 
 			header{font-size: 64px;
 				width: 900px;
-				margin: 0 auto; /* centrar elementos dentro de este div */
+				margin: 0 auto;
+				float: center;
 			 }
 
 			footer {width: 900px;
 				margin: 0 auto;}
 
-		#contenedor{/* selecciona el div y lo pinta */
+		#contenedor{
 			width: 900px; 
-			padding: 20px 0px;
-			margin: 0px;
+			padding: 20px 20px;
+			margin: 30px;
 			background: gray;
-			margin: 0 auto; /* centrar elementos dentro de este div */
+			margin: 0 auto; 
 			float: center;  /* otras opciones son left, right */
 		}
-		div{/* selecciona el div y lo pinta */
+
+		div{
 			width: 820px; 
 			padding: 20px;
-			margin: 20px 20px;
+			margin: 20px;
 			background: white;
 		}
-		#desarrollo{/* selecciona el id y lo pinta */
+
+		#desarrollo{
 			background: orange;
 			}
-		h1{/* selecciona el header o titulo 1 y lo pinta */
-			background: yellow;
-			width: 100%;
-			padding: 0px;
-			margin: 20px 0px;
-			border: 0px solid blue;
+
+		h1{
+			background: #E9E3E2;
+			width: 900px;
+			padding: 10px;
+			margin: 20px;
 			font-size: 28px;
-			color: green;
+			color: #565D57;
     		font-family: 'Aboreto', cursive;
     		}
+
 		h2 {/* selecciona el header o titulo 3 y lo pinta */
 			background: pink;
 			width: 80%;
@@ -46,16 +50,19 @@ body{ /* body selecciona el cuerpo general y lo pinta */
 			color: navy;
 			font-family: 'Orelega One', cursive;
 			}
+
 		p {/* selecciona el parrafo y lo pinta */
 			background: white;
 			width: 100%;
 			padding: 10px;
 			font-size: 18px;
 			}
+
 		img{/* selecciona las imagenes y las formatea */
 			border: 0px solid gray;
 			width: 100%;
 			}
+
 ul {
   list-style-type: none;
   margin: 0;
