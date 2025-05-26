@@ -1,72 +1,224 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Leverage Points & Recetas Urbanas</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet"> 
+@font-face {
+  font-family: 'AvertaDemo';
+  src: url('fonts/AvertaDemoPECuttedDemo-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="style.css">
+@font-face {
+  font-family: 'Axiforma';
+  src: url('fonts/Axiforma-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Brutel';
+  src: url('fonts/Brutel-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'MaldenSans';
+  src: url('fonts/MaldenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
-</head>
+/*----------------------------- RESET Y TEXTOS------*/
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
-<body>
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
- <nav>
-      <ul>
-        <li><a href="#">Paper</a></li>
-        <li><a href="#">Proyecto</a></li>
-        <li><a href="#">Nuestra visión</a></li>
-        <li><a href="#">Nosotros</a></li>
-      </ul>
+body {
+  background-color: #D7CBB2;
+  font-family: 'Axiforma', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #4A4A4A;
+}
 
- </nav>
+header {
+  background-color: #D7CBB2;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
 
-<br>
+h1 {
+  font-family: 'Brutel', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #2E2E2E;
+}
 
-	<header><center><h1>Diseño colectivo, Impacto real</h1></center></header>
-    
-	<div id="contenedor">
+h2 {
+  font-family: 'MaldenSans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #3A3A3A;
+}
 
-		<div id="introduccion">
-		<p>Párrafo para describir a mi gato</p>
-		
+p {
+  font-family: 'Axiforma', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #4A4A4A;
+}
 
-		<h2>A Sub titulo para este proyecto</h2>
-		<p>-Otro párrafo cortito...</p>
-			
-		<h3>B Sub titulo otro contenido</h3>
-		<p>Un párrafo final tipo conclusión</p>
+/*------------------ NAVBAR------------------*/
 
-		<h2>C Sub titulo vis 1</h2>
-		<img src="img/vis01.jpg">
-		<p>Un párrafo explicativo</p>
+.navbar ul {
+  list-style-type: none;
+  background-color: #6A7A5A;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-		<h2>D Sub titulo vis 2</h3>
-		<object data="img/vis02.svg" type="image/svg+xml"></object>
-		<p>Un párrafo explicativo</p>
-	</div><!-- cierre div contenedor -->
+.navbar a {
+  font-family: 'MaldenSans', sans-serif;
+  color: #D7CBB2;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+}
 
+.navbar a:hover {
+  background-color: #303828;
+}
 
-	<div id="desarrollo">
-		otro div
-	</div>
+/*--------------- SECCIONES------------------*/
 
+section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 20px; /* <--- padding vertical agregado aquí */
+}
 
-	<div id="conclusion">
-	otro div mas...
-	</div>
+.bloque-Donella {
+  background-color: #AAC4BC;
+}
 
-	</div>
+.contenido-Donella {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-		<footer><h1>Pie de página</h1></footer>
+.contenido-Donella img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
 
+.contenido-Donella p {
+  flex: 1;
+}
 
-</body>
-</html>
+.texto-Donella h2 {
+  margin-bottom: 10px;
+}
+
+.bloque-ObrasDone {
+  background-color: #D7CBB2;
+  color: #4A4A4A;
+}
+
+.bloque-ObrasDone h2 {
+  margin-bottom: 40px;
+}
+
+.imagenes-libros {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.libro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 150px;
+  text-align: center;
+}
+
+.libro img {
+  height: 150px;
+  width: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.libro p {
+  font-size: 0.9rem;
+  font-family: 'Axiforma', sans-serif;
+  color: #4A4A4A;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.bloque-Paper {
+  background-color: #6A7A5A;
+  color: #F8F8F8;
+  width: 100%;
+}
+
+.bloque-Santiago {
+  background-color: #D7CBB2;
+  width: 100%;
+}
+
+.bloque-proyecto {
+  background-image: url('images/Fierros editados.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #F8F8F8;
+  position: relative;
+  text-align: left;
+}
+
+.bloque-proyecto h2,
+.bloque-proyecto p {
+  color: #D7CBB2;
+}
+
+.contenido-proyecto {
+  padding: 30px 0;
+  max-width: 800px;
+}
+
+.bloque-vinculacion {
+  background-color: #AAC4BC;
+}
+
+.bloque-conclusion {
+  background-color: #D7CBB2;
+}
+
+/*--------------- NUEVA CLASE DE TEXTO CENTRAL ---------------*/
+
+.contenido-bloque {
+  padding-left: 30px;
+  padding-right: 30px;
+}
